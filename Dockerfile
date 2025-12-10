@@ -6,8 +6,8 @@ WORKDIR /var/lib/ghost
 RUN npm install ghost-storage-adapter-s3
 
 # Ghost expects storage adapters to be in content/adapters/storage/<name>
-RUN mkdir -p content/adapters/storage/s3 && \
-    cp -r node_modules/ghost-storage-adapter-s3/* content/adapters/storage/s3/
+RUN mkdir -p current/core/server/adapters/storage/s3 && \
+    cp -r node_modules/ghost-storage-adapter-s3/* current/core/server/adapters/storage/s3/
 
 # Cleanup
 RUN npm cache clean --force
