@@ -1,4 +1,4 @@
-FROM ghost:6.10.1-alpine
+FROM ghost:6.77.0-alpine
 
 # Install the S3 Storage Adapter
 RUN npm install ghost-storage-adapter-s3
